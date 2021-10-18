@@ -3,9 +3,24 @@
 
 public class FizzBuzz {
     public String fizzBuzz(int number) {
-        // fizzbuzz logic here - returns "Fizz", "Buzz", "FizzBuzz"
-        // or a String cast of the number itself. 
-        // Hint: You can use a String method to cast the int to a String.
+        //for(int i=1; i<=100; i++) {
+            if(i % 3 == 0 && i % 5 == 0) {
+                console.log("FizzBuzz");
+            } 
+            else{
+            if(i % 3 == 0) {
+                console.log("Fizz");
+                }
+                else{
+                    if(i % 5 == 0) {
+                    console.log("Buzz");
+                    }
+                    else {
+                        Integer.toString(number);
+                    }
+                } 
+            }
+        //}
     }
     
     // NINJA BONUS:
