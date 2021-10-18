@@ -2,24 +2,16 @@
 
 
 public class FizzBuzz {
-    public String fizzBuzz(int number) {
+
+    public static String fizzBuzz(int number) {
         //for(int i=1; i<=100; i++) {
-            if(i % 3 == 0 && i % 5 == 0) {
-                console.log("FizzBuzz");
-            } 
-            else{
-            if(i % 3 == 0) {
-                console.log("Fizz");
-                }
-                else{
-                    if(i % 5 == 0) {
-                    console.log("Buzz");
-                    }
-                    else {
-                        Integer.toString(number);
-                    }
-                } 
-            }
+        if(number % 5 == 0 && number % 3 == 0)
+            return "FizzBuzz";
+        if(number % 5 == 0)
+            return "Fizz";
+        if(number % 3 == 0)
+            return "Buzz";
+        return Integer.toString(number);
         //}
     }
     
@@ -35,5 +27,22 @@ public class FizzBuzz {
         
         // Implement the same logic, but replace "Fizz", "Buzz" and 
         // "Fizzbuzz" with the given words
+    }
+
+    public static void main(String[] args) {
+        FizzBuzz tester = new FizzBuzz();
+        
+        System.out.println(fizzBuzz(9));     // Fizz
+        System.out.println(fizzBuzz(10));    // Buzz
+        System.out.println(fizzBuzz(15));    // FizzBuzz
+        System.out.println(fizzBuzz(16));    // 16
+        System.out.println(fizzBuzz(2)); 
+        
+        // Uncomment the following for a more comprehensive test:
+        /*
+        for (int i = 1; i <= 50; i++) {
+            System.out.println(tester.fizzBuzz(i));
+        }
+        */
     }
 }
