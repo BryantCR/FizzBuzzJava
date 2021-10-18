@@ -1,7 +1,7 @@
 
 
 
-public class FizzBuzz {
+public class fizzBuzz {
 
     public static String fizzBuzz(int number) {
         //for(int i=1; i<=100; i++) {
@@ -14,23 +14,9 @@ public class FizzBuzz {
         return Integer.toString(number);
         //}
     }
-    
-    // NINJA BONUS:
-    // Create an overloaded method for fizzBuzz
-    public String fizzBuzz(
-        // Parameters
-        int number,  
-        String multOf3Word, 
-        String multOf5Word,
-        String multOf15Word
-        ) {
-        
-        // Implement the same logic, but replace "Fizz", "Buzz" and 
-        // "Fizzbuzz" with the given words
-    }
 
     public static void main(String[] args) {
-        FizzBuzz tester = new FizzBuzz();
+        fizzBuzz tester = new fizzBuzz();
         
         System.out.println(fizzBuzz(9));     // Fizz
         System.out.println(fizzBuzz(10));    // Buzz
