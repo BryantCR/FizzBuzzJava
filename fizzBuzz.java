@@ -2,7 +2,7 @@
 
 
 public class fizzBuzz {
-
+    
     public static String fizzBuzz(int number) {
         //for(int i=1; i<=100; i++) {
         if(number % 3 == 0 && number % 5 == 0)
