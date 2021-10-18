@@ -5,7 +5,7 @@ public class fizzBuzz {
 
     public static String fizzBuzz(int number) {
         //for(int i=1; i<=100; i++) {
-        if(number % 5 == 0 && number % 3 == 0)
+        if(number % 3 == 0 && number % 5 == 0)
             return "FizzBuzz";
         if(number % 5 == 0)
             return "Fizz";
@@ -24,11 +24,5 @@ public class fizzBuzz {
         System.out.println(fizzBuzz(16));    // 16
         System.out.println(fizzBuzz(2)); 
         
-        // Uncomment the following for a more comprehensive test:
-        /*
-        for (int i = 1; i <= 50; i++) {
-            System.out.println(tester.fizzBuzz(i));
-        }
-        */
     }
 }
